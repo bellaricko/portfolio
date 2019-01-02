@@ -1,0 +1,18 @@
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+
+    .social-media ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+    
+    .social-media li {
+        display: block;
+    }
+    
+    .social-media li a {
+        color: rgb(38, 38, 51);
+    }
+}

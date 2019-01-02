@@ -1,0 +1,88 @@
+@import 'animations.css';
+@import 'mobile.css';
+@import 'responsive.css';
+
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+/*==========*/
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    margin-top: 10%;
+}
+
+.tagline {
+    font-size: 2em;
+    text-align: center;
+}
+
+.social-media {
+    text-align: center;
+    padding: 1%;
+    margin: 2% 0% 0% 0%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 5px;
+    margin:0px 5px 0px 5px;
+    color: rgb(38, 38, 51);
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fff;
+}
+
+.content {
+    height: 100vh;
+
+    p {
+        padding: 2%;
+    }
+}
+
+.footer {
+    padding: 1% 2% 1% 1%;
+    background-color: #fff;
+    height: 20vh;
+}
+
+.footer > p {
+    color: #333;
+    text-align: center;
+}
+
+.landing-page {
+    height: 100vh;
+}
+
+.link-to-projects {
+    text-align: center;
+    font-size: 25px;
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from { transform: translate3d(0,0,0);}
+    to {transform: translate3d(0, 20px, 0);}
+}
+
+.profile-pic {
+    float: left;
+}
