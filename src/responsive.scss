@@ -1,0 +1,16 @@
+/* RESPONSIVE GRID */
+/*  FLEXBOX  */
+.section {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 361px) {
+	.title {
+		font-size: 3em;
+	}
+
+	.tagline {
+		font-size: 2em;
+	}
+}

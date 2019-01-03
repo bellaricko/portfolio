@@ -13,21 +13,21 @@ class Portfolio extends React.Component {
                 title: "Tic Tac Toe",
                 date: "2018-12-27",
                 text: "Mitt första projekt i React.js, spelet Tic Tac Toe.",
-                link: "https://github.com/bellaricko/tictactoe.git",
+                link: "https://github.com/bellaricko/tictactoe",
                 category: "Project"
             },
             {
                 title: "ToDo-list",
                 date: "2018-12-28",
                 text: "En enkel ToDo-list i React.js.",
-                link: "https://github.com/bellaricko/todolist.git",
+                link: "https://github.com/bellaricko/todolist",
                 category: "Project"
             },
             {
                 title: "Portfolio",
                 date: "2018-12-27",
                 text: "Den här portfolion byggd i React.js.",
-                link: "github.com",
+                link: "https://github.com/bellaricko/portfolio",
                 category: "Project"
             },
             {
@@ -56,12 +56,8 @@ class Portfolio extends React.Component {
                     </div>
                     <div className="section group" id="Projects">
                         <div className="span_4_of_4 content">
+                            <h2>Mina projekt</h2>
                             {cards.map((card) => <Card card={card}></Card>)}
-                        </div>
-                    </div>
-                    <div className="section group" id="AboutMe">
-                        <div className="span_4_of_4 footer">
-                            <p>Sidan är skapad av mig, @izabellalonnqvist</p>
                         </div>
                     </div>
                 </div>

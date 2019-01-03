@@ -8,6 +8,10 @@
         margin-top: 1%;
     }
 
+    a:hover {
+        background-color: red;
+    }
+
     @media screen and (min-width: 361px) {
             padding: 1%;
             display: inline block;

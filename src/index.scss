@@ -1,12 +1,19 @@
 @import 'animations.css';
 @import 'mobile.css';
-@import 'responsive.css';
+@import 'responsive.scss';
 
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     background: #F2994A;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  a {
+    text-decoration: none;
+    padding: 5px;
+    margin:0px 5px 0px 5px;
+    color: rgb(65, 46, 45);
   }
 /*==========*/
 
@@ -36,34 +43,19 @@ li {
     display: inline;
 }
 
-li a {
-    padding: 5px;
-    margin:0px 5px 0px 5px;
-    color: rgb(38, 38, 51);
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #fff;
-}
-
 .content {
     height: 100vh;
+    background-color: #fff;
 
     p {
         padding: 2%;
     }
-}
 
-.footer {
-    padding: 1% 2% 1% 1%;
-    background-color: #fff;
-    height: 20vh;
-}
-
-.footer > p {
-    color: #333;
-    text-align: center;
+    h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 5%;
+    }
 }
 
 .landing-page {
@@ -81,8 +73,4 @@ li a:hover {
 @keyframes bounce {
     from { transform: translate3d(0,0,0);}
     to {transform: translate3d(0, 20px, 0);}
-}
-
-.profile-pic {
-    float: left;
 }
