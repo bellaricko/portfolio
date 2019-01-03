@@ -4,6 +4,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import './index.scss';
 import SocialIcons from './components/SocialMedia/SocialIcons';
 import Card from './components/Card/Card';
+import AboutMe from './components/AboutMe/AboutMe';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,28 +13,24 @@ class Portfolio extends React.Component {
         const cards = [
             {
                 title: "Tic Tac Toe",
-                date: "2018-12-27",
                 text: "Mitt första projekt i React.js, spelet Tic Tac Toe.",
                 link: "https://github.com/bellaricko/tictactoe",
                 category: "Project"
             },
             {
                 title: "ToDo-list",
-                date: "2018-12-28",
                 text: "En enkel ToDo-list i React.js.",
                 link: "https://github.com/bellaricko/todolist",
                 category: "Project"
             },
             {
                 title: "Portfolio",
-                date: "2018-12-27",
                 text: "Den här portfolion byggd i React.js.",
                 link: "https://github.com/bellaricko/portfolio",
                 category: "Project"
             },
             {
                 title: "Ett annat test",
-                date: "2018-12-28",
                 text: "Testar",
                 link: "github.com",
                 category: "Blog"
@@ -57,8 +54,14 @@ class Portfolio extends React.Component {
                     </div>
                     <ScrollableAnchor id={'Projects'}>
                         <div className="content">
-                            <h2>Mina projekt</h2>
+                            <h1>Mina projekt</h1>
                             {cards.map((card) => <Card card={card}></Card>)}
+                        </div>
+                    </ScrollableAnchor>
+                    <ScrollableAnchor id={'AboutMe'}>
+                        <div className="content">
+                            <h1>Om mig</h1>
+                            <AboutMe />
                         </div>
                     </ScrollableAnchor>
                 </div>

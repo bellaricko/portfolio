@@ -1,0 +1,17 @@
+.container-skills {
+    margin-bottom: 20px;
+}
+
+.container-pitch {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    background-color: #e3e3e3;
+    margin: 20px 0px 20px 0px;
+
+    @media screen and (min-width: 361px) {
+        width: 50%;
+    }
+}
