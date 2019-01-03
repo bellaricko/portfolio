@@ -36,11 +36,11 @@ const CategoryIcon = (value) => {
 
 const Card = (props) => {
     return (
-        <div className="col span_1_of_4 cards" style={{ borderColor: RandomBorderColor(), borderWidth: 3, borderStyle: "solid" }}>
-            <h4>{props.card.title}</h4>
-            <div className="icon"><FontAwesomeIcon icon={CategoryIcon(props.card.category)} /></div>
-            <ul id="card-categories">
-                <li>Upplagd {props.card.date} | <a href={props.card.link}>GitHub</a></li>
+        <div className="cards" style={{ borderTopColor: RandomBorderColor(), borderTopWidth: 6, borderTopStyle: "solid" }}>
+            <h4><FontAwesomeIcon icon={CategoryIcon(props.card.category)} /> {props.card.title}</h4>
+            <ul>
+                <li>Upplagd {props.card.date}</li>
+                <li><a href={props.card.link}>GitHub</a></li>
             </ul>
             <p>{props.card.text}</p>
         </div>

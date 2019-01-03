@@ -3,13 +3,25 @@
     width: 100%;
     background-color: white;
 
-    ul li {
-        display: block;
-        margin-top: 1%;
+    a {
+        color: #3d3c3c;
+        text-decoration: underline;
     }
 
     a:hover {
-        background-color: red;
+        text-decoration: none;
+        background-color: #000;
+        color: #fff;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    ul li {
+        font-size: 0.7rem;
+        margin: 2%;
     }
 
     @media screen and (min-width: 361px) {
@@ -19,24 +31,5 @@
             float: left;
             margin: 1.5%;
     }
-}
-
-/* MOBILE-FIRST APPROACH */
-
-h4 {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#card-categories {
-    font-size: 0.8em;
-    text-align: center;
-    padding: 0px;
-}
-
-.icon {
-    color: rgb(167, 165, 165);
-    text-align: center;
-    font-size: 2rem;
 }
 

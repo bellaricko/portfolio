@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import './index.scss';
-import SocialIcons from './components/SocialIcons';
+import SocialIcons from './components/SocialMedia/SocialIcons';
 import Card from './components/Card/Card';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -44,7 +45,7 @@ class Portfolio extends React.Component {
                 <div className="section group">
                     <div className="landing-page">
                         <div className="section">
-                            <div className="title animation-target">Hej!</div>
+                            <div className="title animation-target-welcome">Hej!</div>
                         </div>
                         <div className="section">
                             <div className="tagline">Izabella Lönnqvists portfolio</div>
@@ -54,14 +55,14 @@ class Portfolio extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="section group" id="Projects">
-                        <div className="span_4_of_4 content">
+                    <ScrollableAnchor id={'Projects'}>
+                        <div className="content">
                             <h2>Mina projekt</h2>
                             {cards.map((card) => <Card card={card}></Card>)}
                         </div>
-                    </div>
+                    </ScrollableAnchor>
                 </div>
-            </div >
+            </div>
         );
     }
 }

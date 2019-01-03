@@ -1,6 +1,4 @@
-
-
-.animation-target {
+.animation-target-welcome {
     -webkit-animation: animation 3200ms linear infinite both;
     animation: animation 3200ms linear infinite both;
     -webkit-animation-iteration-count: 2;
