@@ -33,7 +33,7 @@ class Portfolio extends React.Component {
             {
                 title: "Ett annat test",
                 date: "2018-12-28",
-                text: "Pupper gillar gos och pussar.",
+                text: "Testar",
                 link: "github.com",
                 category: "Blog"
             }
@@ -43,13 +43,13 @@ class Portfolio extends React.Component {
             <div>
                 <div className="section group">
                     <div className="landing-page">
-                        <div className="span_4_of_4 section">
+                        <div className="section">
                             <div className="title animation-target">Hej!</div>
                         </div>
-                        <div className="span_4_of_4">
+                        <div className="section">
                             <div className="tagline">Izabella Lönnqvists portfolio</div>
                             <SocialIcons />
-                            <div className="span_4_of_4 link-to-projects">
+                            <div className="link-to-projects">
                                 <a href="index.html#Projects"><FontAwesomeIcon icon={faAngleDoubleDown} /></a>
                             </div>
                         </div>
