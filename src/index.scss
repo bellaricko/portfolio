@@ -15,7 +15,7 @@ body {
   }
 
 .content {
-    height: 100vh;
+    justify-content: space-around;
 }
 
 /* LINKS */
@@ -46,8 +46,10 @@ h1, h2, h3, h4 {
     color: #000;
 }
 
-.landing-page {
-    height: 100vh;
+.landing-page, .about-me, .projects {
+    @media screen and (min-width: 361px) {
+        height: 100vh;
+    }
 }
 
 .link-to-projects {

@@ -32,14 +32,20 @@ class Portfolio extends React.Component {
             {
                 title: "Ett annat test",
                 text: "Testar",
-                link: "github.com",
+                link: "",
+                category: "Blog"
+            },
+            {
+                title: "Under konstruktion!",
+                text: "Den här portfolion är under uppbyggnad.",
+                link: "",
                 category: "Blog"
             }
         ]
 
         return (
             <div>
-                <div className="section group">
+                <div className="section">
                     <div className="landing-page">
                         <div className="section">
                             <div className="title animation-target-welcome">Hej!</div>
@@ -53,14 +59,14 @@ class Portfolio extends React.Component {
                         </div>
                     </div>
                     <ScrollableAnchor id={'Projects'}>
-                        <div className="content">
+                        <div className="content projects">
                             <h1>Mina projekt</h1>
                             {cards.map((card) => <Card card={card}></Card>)}
                         </div>
                     </ScrollableAnchor>
                     <ScrollableAnchor id={'AboutMe'}>
-                        <div className="content">
-                            <h1>Om mig</h1>
+                        <div className="content about-me">
+                            <h1>Curriculum vitae</h1>
                             <AboutMe />
                         </div>
                     </ScrollableAnchor>
