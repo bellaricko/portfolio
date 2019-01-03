@@ -15,31 +15,36 @@ class Portfolio extends React.Component {
                 title: "Tic Tac Toe",
                 text: "Mitt första projekt i React.js, spelet Tic Tac Toe.",
                 link: "https://github.com/bellaricko/tictactoe",
-                category: "Project"
+                category: "Project",
+                language: "React.js"
             },
             {
                 title: "ToDo-list",
                 text: "En enkel ToDo-list i React.js.",
                 link: "https://github.com/bellaricko/todolist",
-                category: "Project"
+                category: "Project",
+                language: "React.js"
             },
             {
                 title: "Portfolio",
                 text: "Den här portfolion byggd i React.js.",
                 link: "https://github.com/bellaricko/portfolio",
-                category: "Project"
+                category: "Project",
+                language: "React.js"
             },
             {
                 title: "Ett annat test",
                 text: "Testar",
                 link: "",
-                category: "Blog"
+                category: "Blog",
+                language: "frontend"
             },
             {
                 title: "Under konstruktion!",
                 text: "Den här portfolion är under uppbyggnad.",
                 link: "",
-                category: "Blog"
+                category: "Blog",
+                language: "frontend"
             }
         ]
 

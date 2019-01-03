@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './Card.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faAdjust } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faCamera } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -11,7 +11,8 @@ const propTypes = {
     card: PropTypes.shape({
         title: PropTypes.string.isRequired,
         text: PropTypes.string.isRequired,
-        link: PropTypes.string.isRequired
+        link: PropTypes.string.isRequired,
+        language: PropTypes.string.isRequired
     }).isRequired
 }
 
@@ -26,7 +27,7 @@ const CategoryIcon = (value) => {
     }
 
     else if (value === "Blog") {
-        return faAdjust;
+        return faCoffee;
     }
 
     else {
@@ -39,7 +40,7 @@ const Card = (props) => {
         <div className="cards" style={{ borderTopColor: RandomBorderColor(), borderTopWidth: 6, borderTopStyle: "solid" }}>
             <h3><FontAwesomeIcon icon={CategoryIcon(props.card.category)} /> {props.card.title}</h3>
             <ul id="card-categories">
-                <li>Test</li>
+                <li>{props.card.language}</li>
                 <li><a href={props.card.link}><FontAwesomeIcon icon={faGithub} /> GitHub</a></li>
             </ul>
             <p>{props.card.text}</p>
